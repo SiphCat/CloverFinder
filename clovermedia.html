@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clovermedia — Cloverfinder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-top">
+        <a class="logo-link" href="index.html" aria-label="Go to homepage">
+          <div class="logo" aria-label="four leaf clover" role="img">🍀</div>
+        </a>
+        <div class="hero-text">
+          <h1>Cloverfinder</h1>
+          <p>
+            look at where people find their clovers, you might find some of your
+            own there!
+          </p>
+        </div>
+        <div class="auth-controls">
+          <button class="auth-toggle" type="button" data-auth-target="signup-panel">Sign Up</button>
+          <button class="auth-toggle" type="button" data-auth-target="login-panel">Log In</button>
+        </div>
+      </div>
+      <nav class="page-nav" aria-label="Main page links">
+        <a href="index.html">Home Page</a>
+        <a class="active" href="clovermedia.html">Clovermedia</a>
+        <a href="credits.html">Credits</a>
+        <a href="dev.html">Dev</a>
+        <div class="account-menu-wrap is-hidden" data-account-wrap>
+          <button class="account-chip" type="button" aria-label="Your account" data-account-chip>
+            <img class="account-avatar is-hidden" alt="Profile picture" data-account-avatar />
+            <span class="account-icon" aria-hidden="true" data-account-icon>👤</span>
+            <span data-account-name>Your Account Name</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="map-area" style="padding: 1.5rem; max-width: 720px; margin: 0 auto">
+      <h2 style="margin-top: 0">Clovermedia</h2>
+      <p>
+        The live community gallery runs in the Next.js app. Start the dev server and open
+        <strong>/clovermedia</strong> (for example <code>http://127.0.0.1:3000/clovermedia</code>).
+      </p>
+      <p>
+        Explorers opt in when posting a find with a photo. Run
+        <code>supabase/sql/cloverfinder_finds_badges_media.sql</code> in Supabase so uploads work.
+      </p>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>

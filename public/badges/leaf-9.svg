@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 120 120" role="img" aria-label="9-leaf clover badge">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#e9d5ff"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#581c87"/>
+    </radialGradient>
+    <linearGradient id="lf" x1="20%" y1="10%" x2="80%" y2="95%">
+      <stop offset="0%" stop-color="#f3e8ff"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6b21a8"/>
+    </linearGradient>
+    <linearGradient id="ls" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="56" r="54" fill="url(#bg)"/>
+  <circle cx="60" cy="56" r="50" fill="none" stroke="#c084fc" stroke-width="2" opacity="0.55"/>
+  <g><path d="M 46.00 32.00 Q 60.00 32.00 60.00 14.00 Q 60.00 32.00 74.00 32.00 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 64.70 28.62 Q 75.43 37.61 87.00 23.83 Q 75.43 37.61 86.15 46.61 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 81.20 38.05 Q 83.64 51.83 101.36 48.71 Q 83.64 51.83 86.07 65.62 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 87.78 55.88 Q 80.78 68.00 96.37 77.00 Q 80.78 68.00 73.78 80.12 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 81.36 73.76 Q 68.21 78.55 74.36 95.47 Q 68.21 78.55 55.05 83.34 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 64.95 83.34 Q 51.79 78.55 45.64 95.47 Q 51.79 78.55 38.64 73.76 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 46.22 80.12 Q 39.22 68.00 23.63 77.00 Q 39.22 68.00 32.22 55.88 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 33.93 65.62 Q 36.36 51.83 18.64 48.71 Q 36.36 51.83 38.80 38.05 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 33.85 46.61 Q 44.57 37.61 33.00 23.83 Q 44.57 37.61 55.30 28.62 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/></g>
+  <circle cx="60" cy="56" r="5" fill="#581c87"/>
+  <rect x="57" y="58" width="6" height="32" rx="2.5" fill="#581c87"/>
+  <text x="60" y="108" text-anchor="middle" font-size="10" font-weight="800" fill="#fefce8" stroke="#581c87" stroke-width="0.4">9 LEAVES</text>
+</svg>

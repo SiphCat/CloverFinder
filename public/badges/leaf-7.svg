@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 120 120" role="img" aria-label="7-leaf clover badge">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#115e59"/>
+    </radialGradient>
+    <linearGradient id="lf" x1="20%" y1="10%" x2="80%" y2="95%">
+      <stop offset="0%" stop-color="#99f6e4"/>
+      <stop offset="50%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#134e4a"/>
+    </linearGradient>
+    <linearGradient id="ls" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="56" r="54" fill="url(#bg)"/>
+  <circle cx="60" cy="56" r="50" fill="none" stroke="#2dd4bf" stroke-width="2" opacity="0.55"/>
+  <g><path d="M 46.00 32.00 Q 60.00 32.00 60.00 14.00 Q 60.00 32.00 74.00 32.00 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 70.04 30.09 Q 78.76 41.04 92.84 29.81 Q 78.76 41.04 87.49 51.98 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 86.51 47.69 Q 83.40 61.34 100.95 65.35 Q 83.40 61.34 80.28 74.99 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 83.03 71.55 Q 70.41 77.62 78.22 93.84 Q 70.41 77.62 57.80 83.70 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 62.20 83.70 Q 49.59 77.62 41.78 93.84 Q 49.59 77.62 36.97 71.55 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 39.72 74.99 Q 36.60 61.34 19.05 65.35 Q 36.60 61.34 33.49 47.69 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/>
+    <path d="M 32.51 51.98 Q 41.24 41.04 27.16 29.81 Q 41.24 41.04 49.96 30.09 Z" fill="url(#lf)" stroke="url(#ls)" stroke-width="1.1"/></g>
+  <circle cx="60" cy="56" r="5" fill="#134e4a"/>
+  <rect x="57" y="58" width="6" height="32" rx="2.5" fill="#134e4a"/>
+  <text x="60" y="108" text-anchor="middle" font-size="10" font-weight="800" fill="#fefce8" stroke="#134e4a" stroke-width="0.4">7 LEAVES</text>
+</svg>

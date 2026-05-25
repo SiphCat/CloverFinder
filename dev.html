@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloverfinder - Dev</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-top">
+        <a class="logo-link" href="index.html" aria-label="Go to homepage" data-brand-home>
+          <div class="logo" aria-label="four leaf clover" role="img">🍀</div>
+        </a>
+        <div class="hero-text">
+          <h1>Cloverfinder</h1>
+          <p>
+            look at where people find their clovers, you might find some of your
+            own there!
+          </p>
+        </div>
+        <div class="auth-controls">
+          <button class="auth-toggle" type="button" data-auth-target="signup-panel">
+            Sign Up
+          </button>
+          <button class="auth-toggle" type="button" data-auth-target="login-panel">
+            Log In
+          </button>
+        </div>
+      </div>
+      <nav class="page-nav" aria-label="Main page links">
+        <a href="index.html">Home Page</a>
+        <a href="clovermedia.html">Clovermedia</a>
+        <a href="credits.html">Credits</a>
+        <a class="active" href="dev.html">Dev</a>
+        <div class="account-menu-wrap is-hidden" data-account-wrap>
+          <button class="account-chip" type="button" aria-label="Your account" data-account-chip>
+            <img class="account-avatar is-hidden" alt="Profile picture" data-account-avatar />
+            <span class="account-icon" aria-hidden="true" data-account-icon>👤</span>
+            <span data-account-name>Your Account Name</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="map-area credits-area">
+      <section class="center-auth" id="signup-panel" aria-label="Sign up form">
+        <form class="auth-form">
+          <label for="signup-username">Username</label>
+          <input id="signup-username" name="username" type="text" required />
+
+          <label for="signup-password">Password</label>
+          <input id="signup-password" name="password" type="password" required />
+
+          <label for="signup-password-verify">Verify Password</label>
+          <input id="signup-password-verify" name="verify-password" type="password" required />
+
+          <label for="signup-email">Email Account</label>
+          <input id="signup-email" name="email" type="email" />
+
+          <button class="secondary" type="button" data-toggle-email>
+            Don't use my email account
+          </button>
+
+          <label class="remember-row">
+            <input type="checkbox" name="remember-signup" />
+            Remember me
+          </label>
+          <button type="submit">Create Account</button>
+        </form>
+      </section>
+      <section class="center-auth" id="login-panel" aria-label="Log in form">
+        <form class="auth-form">
+          <label for="login-username">Username</label>
+          <input id="login-username" name="username" type="text" required />
+
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" required />
+
+          <label class="remember-row">
+            <input type="checkbox" name="remember" />
+            Remember me
+          </label>
+          <button type="submit">Log In</button>
+        </form>
+      </section>
+      <section class="center-auth" id="account-panel" aria-label="Your account">
+        <div class="auth-form account-form">
+          <h2>Your Account</h2>
+          <p>
+            Signed in as
+            <strong data-account-panel-name>Your Account Name</strong>
+          </p>
+          <img class="account-panel-avatar is-hidden" alt="Profile picture" data-account-panel-avatar />
+          <label for="account-picture-upload">Change Profile Picture</label>
+          <input id="account-picture-upload" type="file" accept="image/*" data-account-picture-upload />
+          <button class="secondary" type="button" data-close-account-button>
+            Back to Home
+          </button>
+          <button type="button" data-logout-button>Log Out</button>
+          <button type="button" data-delete-account-button>Delete Account</button>
+        </div>
+      </section>
+      <section class="credits-card">
+        <h2>Dev</h2>
+        <p>Developer tools and test space for Cloverfinder.</p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
