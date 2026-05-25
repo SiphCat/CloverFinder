@@ -15,10 +15,10 @@ export function UsernameSetupCallout() {
     void supabase.auth.getSession().then(({ data }) => {
       const user = data.session?.user;
       const u =
-        typeof data.user?.user_metadata?.username === "string"
-          ? data.user.user_metadata.username.trim()
+        typeof user?.user_metadata?.username === "string"
+          ? user.user_metadata.username.trim()
           : "";
-      setShow(Boolean(data.user && !u));
+      setShow(Boolean(user && !u));
     });
   }, []);
 

@@ -60,7 +60,7 @@ function readEnvLayerFromDir(dir: string): Record<string, string> {
  */
 function walkEnvDirs(): string[] {
   const dirs: string[] = [];
-  let dir = process.cwd();
+  let dir = /* turbopackIgnore: true */ process.cwd();
   for (let i = 0; i < 8; i++) {
     dirs.push(dir);
     const parent = dirname(dir);
@@ -144,8 +144,8 @@ export function serviceRoleConfigDebug(): {
   /** Whether the saved file on disk has a `SUPABASE_SERVICE_ROLE_KEY=` / `SUPABASE_SECRET_KEY=` line */
   serviceRoleLineOnDisk: boolean;
 } {
-  const cwd = process.cwd();
-  const envLocalPath = join(cwd, ".env.local");
+  const cwd = /* turbopackIgnore: true */ process.cwd();
+  const envLocalPath = join(/* turbopackIgnore: true */ cwd, ".env.local");
   return {
     cwd,
     pickedUrl: Boolean(pickSupabaseProjectUrl()),
