@@ -9,7 +9,7 @@ import { HomeMapFilterDropdown } from "@/app/components/HomeMapFilterDropdown";
 /** Keeps the globe mounted while browsing other clover routes (faster nav back). */
 export function HomeMapHost() {
   const pathname = usePathname();
-  const isHome = pathname === "/";
+  const isHome = pathname === "/map";
 
   return (
     <main

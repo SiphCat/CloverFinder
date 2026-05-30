@@ -78,7 +78,7 @@ export function HomeMapClient({ active = true }: Props) {
         markers={markers}
         className="home-finds-map globe-finds-map"
         resetToDefaultOnPopupClose
-        viewResetKey={active && pathname === "/" ? `${pathname}-${leaves}` : undefined}
+        viewResetKey={active && pathname === "/map" ? `${pathname}-${leaves}` : undefined}
         active={active}
       />
       {ready && !loading && pinCount > 0 ? (

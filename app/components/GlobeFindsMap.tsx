@@ -40,7 +40,6 @@ export function GlobeFindsMap({
   active = true
 }: Props) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const glowRef = useRef<HTMLDivElement>(null);
   const labelsRef = useRef<HTMLDivElement>(null);
   const celestialRef = useRef<CelestialBodiesLayer | null>(null);
   const mapRef = useRef<import("maplibre-gl").Map | null>(null);
@@ -92,19 +91,6 @@ export function GlobeFindsMap({
       map.addControl(scale, "bottom-left");
       scaleRef.current = scale;
 
-      const updateGlow = () => {
-        const el = glowRef.current;
-        if (!el) return;
-        const z = map.getZoom();
-        const scale = Math.pow(2, z - DEFAULT_ZOOM);
-        const size = 55 * scale;
-        const opacity = z > 4 ? Math.max(0, 1 - (z - 4)) : 1;
-        el.style.width = `min(${size}vh, ${size}vw)`;
-        el.style.height = `min(${size}vh, ${size}vw)`;
-        el.style.opacity = String(opacity);
-      };
-      map.on("zoom", updateGlow);
-      map.on("load", updateGlow);
 
       const popup = new maplibregl.Popup({
         closeButton: true,
@@ -313,10 +299,8 @@ export function GlobeFindsMap({
 
     if (mode === "normal") {
       celestialRef.current = null;
-      if (glowRef.current) glowRef.current.style.display = "none";
       if (labelsRef.current) labelsRef.current.style.display = "none";
     } else {
-      if (glowRef.current) glowRef.current.style.display = "";
       if (labelsRef.current) labelsRef.current.style.display = "";
     }
 
@@ -420,7 +404,6 @@ export function GlobeFindsMap({
       <div ref={mapContainerRef} className="globe-map-canvas" aria-busy={!ready}>
         {!ready ? <CloverLoadingScreen label="Loading globe…" /> : null}
       </div>
-      {ready ? <div ref={glowRef} className="earth-atmosphere-glow" aria-hidden /> : null}
       {ready ? (
         <div ref={labelsRef} className="celestial-labels" aria-hidden>
           {BODY_LABELS.map((b) => (

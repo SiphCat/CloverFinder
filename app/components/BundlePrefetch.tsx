@@ -10,14 +10,14 @@ export function BundlePrefetch() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (pathname === "/" || pathname.startsWith("/protected")) {
+    if (pathname === "/map" || pathname.startsWith("/protected")) {
       prefetchMapLibre();
       prefetchLeaflet();
     }
-    if (pathname === "/") {
+    if (pathname === "/map") {
       void import("@/lib/prefetchLeaderboard").then((m) => m.prefetchMapFinds());
     }
-    if (pathname === "/" || pathname === "/leaderboard") {
+    if (pathname === "/map" || pathname === "/leaderboard") {
       void import("@/lib/prefetchLeaderboard").then((m) => m.prefetchLeaderboard("all"));
     }
   }, [pathname]);

@@ -154,8 +154,8 @@ p {
   border: 0;
   border-right: 1px solid var(--cf-border, rgba(20, 83, 45, 0.16));
   background: var(--cf-chip-bg, rgba(20, 83, 45, 0.12));
-  min-width: min(120px, 28vw);
-  flex: 1 1 auto;
+  flex: 1 1 0;
+  min-width: 0;
   text-align: center;
   box-sizing: border-box;
   font-family: inherit;
@@ -174,8 +174,8 @@ p {
 
 .page-nav .nav-dropdown-wrap {
   position: relative;
-  flex: 1 1 auto;
-  min-width: min(120px, 28vw);
+  flex: 1 1 0;
+  min-width: 0;
   z-index: 1002;
 }
 

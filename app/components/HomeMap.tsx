@@ -18,7 +18,7 @@ export function HomeMap({ markers, signedIn }: Props) {
         markers={markers}
         className="home-finds-map globe-finds-map"
         resetToDefaultOnPopupClose
-        viewResetKey={pathname === "/" ? pathname : undefined}
+        viewResetKey={pathname === "/map" ? pathname : undefined}
       />
       {signedIn && markers.length === 0 ? (
         <p className="home-finds-map-hint">Your saved finds will appear here as pins.</p>

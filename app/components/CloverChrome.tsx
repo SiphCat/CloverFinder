@@ -85,14 +85,17 @@ export function CloverChrome({ user: userProp }: Props) {
         </div>
       </div>
       <nav className="page-nav" aria-label="Main page links">
+        <Link href="/" className={navClass("/")} prefetch>
+          Home
+        </Link>
         <Link
-          href="/"
-          className={navClass("/")}
+          href="/map"
+          className={navClass("/map")}
           prefetch
           onMouseEnter={() => prefetchMapFinds("all")}
           onFocus={() => prefetchMapFinds("all")}
         >
-          Home Page
+          Map
         </Link>
         <Link href="/clovermedia" className={navClass("/clovermedia")} prefetch>
           Clovermedia
@@ -108,15 +111,6 @@ export function CloverChrome({ user: userProp }: Props) {
         </Link>
         <Link href="/challenges" className={navClass("/challenges")} prefetch>
           Challenges
-        </Link>
-        <Link href="/credits" className={navClass("/credits")} prefetch>
-          Credits
-        </Link>
-        <Link href="/terms" className={navClass("/terms")} prefetch>
-          Terms
-        </Link>
-        <Link href="/privacy" className={navClass("/privacy")} prefetch>
-          Privacy
         </Link>
       </nav>
     </header>

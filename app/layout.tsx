@@ -7,6 +7,9 @@ import { SupabaseSetupBanner } from "@/app/components/SupabaseSetupBanner";
 export const metadata: Metadata = {
   title: "CloverFinder",
   description: "Find clovers on the map — secure sign in with Supabase",
+  verification: {
+    google: "DKgwZd2jXkvirSgNktNOtX7-sUTJRD3LJQdwvJPh660"
+  },
   icons: {
     icon: "/cloverfinder-logo.png",
     apple: "/cloverfinder-logo.png"
